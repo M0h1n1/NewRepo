@@ -12,7 +12,7 @@ namespace PropertyApp.ViewModel
     public class LandingViewModel : BaseViewModel
     {
 
-        public List<string> Sections = new List<string> { "Trending", "Popular", "Buy", "Rent" };
+        public List<string> Sections => new List<string> { "Trending", "Popular", "Buy", "Rent" };
 
         public List<Property> Properties => PropertyRepo.AllProperties;
 
